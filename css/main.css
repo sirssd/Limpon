@@ -47,3 +47,8 @@ h1 {
     color: #1085e4;
     font-weight: 600;
 }
+
+ul :first-child{
+    color: blue;
+}
+

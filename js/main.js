@@ -356,3 +356,42 @@ function compareAge(personA, personB) {
     for(var i = 0; i < people.length; i++) {
     alert(people[i].name); // Вовочка Маша Вася
     } 
+
+    function showArr(ob) {
+        let copyArr = [];
+
+        for(let i = 0; i < ob.length; i++) {
+            if(ob[i] === ob[i +  1] || ob[i] == undefined) continue;
+            copyArr.push(ob[i]);
+
+        }
+        return copyArr;
+    }
+    
+    let p = [1,1,1,2,4,5,5,6,7,8,8];
+    showArr(p);
+
+    function showArr(ob) {
+        let copyArr = [];
+
+        for(let i = 0; i < ob.length; i++) {
+            if(ob[i] === ob[i +  1] || ob[i] == undefined) {
+                if(ob[i] === ob[i-1]) continue;
+                copyArr.push(ob[i]);
+
+            } else {
+                continue;
+            };
+
+        }
+        return copyArr;
+    }
+    
+    let p = [1,1,1,2,4,5,5,6,7,8,8];
+    showArr(p);
+
+    let b = [];
+    b.unshift(23);
+    console.log(b)
+    console.log(b.length)
+
