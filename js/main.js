@@ -395,3 +395,289 @@ function compareAge(personA, personB) {
     console.log(b)
     console.log(b.length)
 
+    function disemvowel(str) {
+        let keys = ['A','a','E','e','I','i','O','o','U','u'];
+        let strSplit = str.split('')
+
+        for(let a = 0; a < strSplit.length; a++) {
+            for(let b = 0; b < keys.length; b++) {
+                if(strSplit[a] == keys[b]) {
+                    strSplit.splice(a, 1);
+                    a--;
+                } else {
+                    continue;
+                }
+            }
+        }
+        
+        str = strSplit.join('');
+        return str;
+      };
+
+      disemvowel('Hello my friend!!!')
+
+
+      
+
+
+      function findMissingLetter(array) {
+        let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        let alpSplit = alphabet.split('');
+        let zeroItem = array[0]; 
+        let arr = [];
+        let skiped = '';
+        
+        if(zeroItem != array[0].toLowerCase()) {
+            alpSplit.forEach((item, i) => {
+            alpSplit[i] = alpSplit[i].toUpperCase();
+            }
+        )};
+        
+        for(let i = 0; i < alpSplit.length; i++) {
+            if(array[0] == alpSplit[i]) arr = alpSplit.slice(i, i + array.length);
+        };
+        for(let s = 0; s < array.length; s++){
+            if(arr[s] != array[s])  skiped += arr[s]; 
+        }
+        return skiped[0];
+    };
+    findMissingLetter(['a','b','d']);
+    findMissingLetter(['A','B','C']);
+
+
+    let a = [[1213,243,35,63,2,4,7,5,22,2,1], [7,4,6,5,2,31,21,1,3]];
+    let b = [];
+    for(let i = 0; i < a.length; i++) {
+       a[i] = a[i].sort((a,b) => {
+          return a - b});
+    }
+
+    let a = [[1213,243,35,63,2,4,7,5,22,2,1], [7,4,6,5,2,31,21,1,3]];
+    let b = 0;
+    for(let item of a) {
+       item = item.sort((a,b) => {
+          return a - b});
+    }
+
+    for(let item of a) {
+        b += item[0];
+    }
+
+    function twosDifference(input){
+        //Enter your solution here
+        let diff = [];
+        let counter = 0;
+        input.sort((a,b) => {
+            return a-b;
+        });
+        for(let i = 0; i < input.length; i++) {
+            for(let c = 1; c < input.length; c++) {
+                if(input[c] - input[i] == 2) {
+                    diff[counter] = [input[i],input[c]];
+                    counter++; 
+                } else {
+                    continue;
+            };
+            }; 
+        };
+        return diff;
+    }
+
+
+    // Set
+    
+    let obj = [1,1,1,13,4,4,5,6,7,2,2222,3,2,333,222,112,323,44,55,55,55,4,4,4,4,5,5,5,5,7,7,7];
+    
+    obj.forEach((item, i) => console.log(item + " " + i));
+
+
+    function hydrate(s) {
+        // your code here
+        let arrStr = s.split(' ');
+        let sum = 0;
+        arrStr.sort();
+
+        for(item of arrStr) {
+            if(isFinite(item)) sum += +item; 
+        }
+        if(sum > 1) {
+            return `${sum} glasses of water`;
+        } else {
+            return `${sum} glass of water`;
+        }
+      };
+
+      hydrate("1 beer");
+
+
+
+
+      cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, milk: 200}); 
+      function cakes(recipe, available) {
+        // TODO: insert code
+        let support = [];
+        let counter = 0;
+
+        for(let key in recipe) {
+            if(available[key] == undefined) return 0;
+        }
+
+        for(let key in recipe) {
+            support[counter] = available[key]/recipe[key];
+            counter++;
+        }
+
+        support.sort((a,b) => a - b);
+        return Math.floor(support[0])
+      }
+
+      function isPrime(num) {
+        //TODO
+        let simple = [];
+        let n = [];
+
+        if(num < 2) return false;
+        for(let i = 0; i<=10; i++) {
+        simple[i] = i;
+        };
+        simple.push(num);
+        simple.sort((a,b) => a - b);
+
+        for(let i = 0; i < simple.length; i++) {
+            if(num % simple[i] == 0) {
+            n.push(simple[i]);
+            }
+        }
+        
+        let set = new Set(n);
+
+        if(set.size > 2) {
+            return false;
+        } else {
+            return true;
+        }
+      };
+      isPrime(482988529);
+
+
+
+
+      function diamond(n){
+        if(n%2 == 0) return null;
+        diam = '';
+        for(let i = 1; i <= n; i++) {
+            if(i%2 == 0) continue;
+            for(let b = 1; b <= i;b++) {
+               diam += "*";
+            };
+
+            diam += "\n";
+            for(let c = 1; c <= (n/2) - i; c++) {
+                diam += " "
+            }
+        }
+        return diam;
+      }
+      diamond(5);
+
+
+
+      let num = 7;
+      let value = 0;
+      let str = '#';
+      while(value < num) {
+        console.log(str);
+        value++;
+        str += '#';
+      };
+
+
+      for(let i = 0; i <= 100; i++) {
+          if(i % 3 == 0 && i % 5 == 0 && i >= 5) {
+              console.log('FizzBuzz');
+          }else if(i % 3 == 0 && i >= 3) {
+              console.log('Fizz');
+          } else if(i % 5 == 0 && i >= 5) {
+              console.log('Buzz');
+          } else {
+          console.log(i);
+          };
+      }
+
+
+      let desk = "# # # #";
+      let outDesk = "";
+
+      for(let i = 1; i <= 8; i++) {
+          if(i % 2 == 0) {
+              outDesk += desk + "\n";
+          } else {
+            outDesk += " " + desk + "\n";
+          };
+      }
+
+      console.log(outDesk);
+
+
+      let deskNum = +prompt("Введите число:");
+      let desk = "";
+      let outDesk = "";
+
+      for(let i = 0; i < deskNum; i++) {
+          desk += "# "
+      }
+
+      for(let i = 1; i <= deskNum; i++) {
+          if(i % 2 == 0) {
+              outDesk += desk + "\n";
+          } else {
+            outDesk += " " + desk + "\n";
+          };
+      }
+
+      console.log(outDesk);
+
+      let b = xvc.find((item,index) => {
+          if(item == 4534) return index;
+        })
+
+
+
+
+        function camelize(str) {
+            let copyStr = str.split('-');
+            let copyStr2 = copyStr.map((item,index,arr) => {
+                let key = item.split('');
+                key[0] = key[0].toUpperCase();
+                return key.join('');
+            });
+            return copyStr2.join('');
+        }
+
+        camelize('left-border-width')
+
+
+        function filterRange(arr,a,b) {
+            let filtered = [];
+            for(let i = 0; i < arr.length;i++) {
+                if(arr[i] >= a && arr[i] < b) filtered.push(arr[i]);
+            }
+            return filtered
+        }
+
+    function filterRangeInPlace(arr,a,b) {
+        for(let i = 0; i < arr.length;i++) {
+            if(arr[i] >= a && arr[i] < b) continue;
+            arr.splice(i,1);
+        }
+    }
+
+
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+let users = [ vasya, petya, masha ];
+let names = users.map(item => {
+    return item.name
+})
+alert( names ); // Вася, Петя, Маша
