@@ -414,7 +414,7 @@ function compareAge(personA, personB) {
         return str;
       };
 
-      disemvowel('Hello my friend!!!')
+      console.log(disemvowel('Hello my friend!!!'))
 
 
       
@@ -578,7 +578,7 @@ function compareAge(personA, personB) {
         }
         return diam;
       }
-      diamond(5);
+      console.log(diamond(5));
 
 
 
@@ -680,4 +680,4 @@ let users = [ vasya, petya, masha ];
 let names = users.map(item => {
     return item.name
 })
-alert( names ); // Вася, Петя, Маша
+console.log( names ); // Вася, Петя, Маша
