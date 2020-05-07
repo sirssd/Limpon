@@ -144,6 +144,11 @@ h1 {
     border-radius: 30px;
 }
 
+.btn-info:hover {
+    background-color: #fff;
+    color: #192b59;
+}
+
 .btn-group a+a {
     margin-left: 15px;
 }
@@ -210,10 +215,12 @@ h1 {
 }
 
 .box-price-item {
+    position: relative;
     background-color: #f5faff;
     flex-basis: 350px;
     padding-bottom: 79px;
 }
+
 .box-price-item h3 {
     margin: 91px 0 0 0;
     font-size: 70px;
@@ -221,7 +228,7 @@ h1 {
     color: #192b59;
 }
 
-.box-price-item h3 span{
+.box-price-item h3 span {
     font-size: 20px;
 }
 
@@ -229,7 +236,8 @@ h1 {
     background-color: #192b59;
     color: #fff;
 }
-.box-price-item.active h3{
+
+.box-price-item.active h3 {
     color: #fff;
 }
 
@@ -259,12 +267,19 @@ h1 {
     padding: 17px 61px;
 }
 
+.box-price-item.third::before {
+    content: url(../img/third.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 /* PAGE -- (s) */
 
-.page-stat, .page-screen{
+.page-stat, .page-screen {
     background-color: #edf6ff;
 }
+
 .page-stat {
     padding: 116px 0 96px 0;
 }
