@@ -57,7 +57,8 @@ h1 {
     color: #1085e4;
 }
 
-.page-stat .title-h2, .page-screen .title-h2 {
+.page-stat .title-h2,
+.page-screen .title-h2 {
     text-align: center;
     margin: 0 auto;
 }
@@ -69,6 +70,20 @@ h1 {
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 305px;
+}
+
+.logo {
+    display: block;
+    background-image: url(../img/Home_logo.png);
+    width: 181px;
+    height: 49px;
 }
 
 .nav {
@@ -87,7 +102,20 @@ h1 {
 }
 
 .nav>li {
-    padding: 0 15px;
+    padding: 0 20px;
+    letter-spacing: 2px;
+}
+
+.screen-img {
+    display: block;
+    position: absolute;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 895px;
+    height: 740px;
+    top: 189px;
+    right: 0;
 }
 
 .btn-primary {
@@ -147,6 +175,46 @@ h1 {
 .btn-info:hover {
     background-color: #fff;
     color: #192b59;
+}
+
+.list-company {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+.list-company-item {
+    font-display: block;
+}
+
+.company-one {
+    background-image: url(../img/token.png);
+    flex-basis: 198px;
+    height: 58px;
+
+}
+
+.company-two {
+    background-image: url(../img/magneto.png);
+    flex-basis: 200px;
+    height: 69px;
+}
+
+.company-three {
+    background-image: url(../img/boohoo.png);
+    flex-basis: 201px;
+    height: 47px;
+}
+
+.company-four {
+    background-image: url(../img/fractal.png);
+    flex-basis: 200px;
+    height: 69px;
 }
 
 .btn-group a+a {
@@ -276,7 +344,35 @@ h1 {
 
 /* PAGE -- (s) */
 
-.page-stat, .page-screen {
+.page-header {
+    background-image: url(../img/background_top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 53px 0 330px 0;
+    position: relative;
+}
+
+.page-company {
+    background-color: #108be4;
+    background-image: url(../img/page-company.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 106px 0 99px 0;
+}
+
+.page-subscribe {
+    background: rgba(10, 32, 144, 1);
+    background: -moz-linear-gradient(-45deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10, 32, 144, 1)), color-stop(100%, rgba(35, 120, 205, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
+    background: linear-gradient(135deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1);
+}
+
+.page-stat,
+.page-screen {
     background-color: #edf6ff;
 }
 
@@ -284,7 +380,8 @@ h1 {
     padding: 116px 0 96px 0;
 }
 
-.page-plan, .page-screen {
+.page-plan,
+.page-screen {
     text-align: center;
 }
 
