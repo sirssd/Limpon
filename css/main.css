@@ -217,8 +217,144 @@ h1 {
     height: 69px;
 }
 
+.page-subscribe .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-subscribe h2 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00bffe;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.page-subscribe h2 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: -1.6px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.page-subscribe p {
+    max-width: 405px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #dfe8ff;
+    margin: 45px 0 40px 0;
+}
+
+.box-subscribe-user {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.box-subscribe-user input {
+    border: 2px solid #3f5cb1;
+    font-size: 14px;
+    border-radius: 45px;
+    background: transparent;
+    padding: 25px 230px 25px 37px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #dce1e5;
+}
+
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primary {
+    outline: none;
+}
+
+.box-subscribe-user input::-webkit-input-placeholder {color:#b1c3ee;}
+.box-subscribe-user input::-moz-placeholder          {color:#b1c3ee;}/* Firefox 19+ */
+.box-subscribe-user input:-moz-placeholder           {color:#b1c3ee;}/* Firefox 18- */
+.box-subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
+
+.box-subscribe-child {
+    flex-basis: 49%;
+}
+
+.box-subscribe-user .btn-primary {
+    position: absolute;
+    top: 11px; 
+    right: 12px;
+    padding: 17px 44px;
+    letter-spacing: 4px;
+}
+
+.img-droid {
+    display: block;
+}
+
 .btn-group a+a {
     margin-left: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d b c"
+                         "d f g"
+                         "e f g"
+                         "e h h";
+    max-width: 1110px;
+    margin: 0 auto;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-title {
+    grid-area: a;
+    width: 260px;
+    margin: 0;
+}
+
+.grid-title span {
+    letter-spacing: 3px;
+}
+
+.grid-item-1 {
+    grid-area: b;
+}
+
+.grid-item-2 {
+    grid-area: c;
+}
+
+.grid-item-3 {
+    grid-area: d;
+}
+
+.grid-item-4 {
+    grid-area: e;
+}
+
+.grid-item-5 {
+    grid-area: f;
+}
+
+.grid-item-6 {
+    grid-area: g;
+}
+
+.grid-text {
+    grid-area: h;
+}
+
+.grid-text .author {
+    color: #1085e4;
+    font-size: 14px;
+}
+
+.grid-text .author span {
+    color: #000000;
+    font-weight: 800;
+    letter-spacing: 0.7px;
 }
 
 .grid h2 span {
@@ -232,16 +368,67 @@ h1 {
     font-weight: 700;
 }
 
+.grid-item {
+    text-align: center;
+    box-shadow: 1px 3px 5px #f4f4f4;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.grid-item a {
+    text-decoration: none;
+}
+
 .grid-item h3 {
     font-size: 20px;
     color: #192b59;
     font-weight: 600;
+    margin-bottom: 18px;
 }
 
 .grid-item a {
     font-size: 14px;
     color: #1085e4;
     font-weight: 600;
+}
+
+.grid-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 21px;
+    height: 92px;
+    display: block;
+    margin-top: 14px;
+}
+
+.grid-icon-1 {
+    background-image: url(../img/doc_icon.png);
+    background-size: 73px 79px;
+}
+
+.grid-icon-2 {
+    background-image: url(../img/highcost_icon.png);
+    background-size: 89px 85px;
+}
+
+.grid-icon-3 {
+    background-image: url(../img/MFD_icon.png);
+    background-size: 79px 82px;
+}
+
+.grid-icon-4 {
+    background-image: url(../img/easytoedit_icon.png);
+    background-size: 103px 92px;
+}
+
+.grid-icon-5 {
+    background-image: url(../img/resdesign.png);
+    background-size: 85px 90px;
+}
+
+.grid-icon-6 {
+    background-image: url(../img/support_icon.png);
+    background-size: 100px 87px;
 }
 
 .list-stat {
@@ -360,7 +547,13 @@ h1 {
     padding: 106px 0 99px 0;
 }
 
+.page-grid {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
 .page-subscribe {
+    padding: 52px 0 52px 0;
     background: rgba(10, 32, 144, 1);
     background: -moz-linear-gradient(-45deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10, 32, 144, 1)), color-stop(100%, rgba(35, 120, 205, 1)));
