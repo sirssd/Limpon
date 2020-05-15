@@ -129,6 +129,7 @@ h1 {
     border-radius: 30px;
     border: 1px solid #108be4;
     padding: 20px 40px;
+    transition: 0.3s;
 }
 
 .btn-primary:hover {
@@ -147,6 +148,7 @@ h1 {
     border-radius: 30px;
     border: 1px solid #cbdbe8;
     padding: 20px 40px;
+    transition: 0.3s;
 }
 
 .btn-secondary:hover {
@@ -157,6 +159,7 @@ h1 {
     font-weight: 400;
     padding: 21px 56px;
     letter-spacing: 1.7px;
+    transition: 0.3s;
 }
 
 .btn-info {
@@ -170,6 +173,7 @@ h1 {
     text-transform: uppercase;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 
 .btn-info:hover {
@@ -431,6 +435,70 @@ h1 {
     background-size: 100px 87px;
 }
 
+.page-softwere-icon {
+    display: block;
+    background-image: url(../img/setting.png);
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 97px;
+}
+
+.softwere-pic {
+    display: block;
+    width: 937px;
+    height: 986px;
+    position: absolute;
+    background-image: url(../img/Grab_Your_Softwere_img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0px;
+    left: -20px;
+    bottom: -39px;
+}
+
+.page-softwere-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-softwere-flex>div{
+    flex-basis: 55%;
+}
+
+.page-softwere .title-h2 {
+    max-width: 557px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+
+.page-softwere-list {
+    margin-top: 31px;
+    height: 323px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.page-softwere-list::-webkit-scrollbar { width: 5px; height: 3px;}
+/* .page-softwere-list::-webkit-scrollbar-button {  background-color: #666; } */
+.page-softwere-list::-webkit-scrollbar-track {  background-color: #f3f6ff;}
+.page-softwere-list::-webkit-scrollbar-track-piece { background-color: #f3f6ff;}
+.page-softwere-list::-webkit-scrollbar-thumb {height: 50px; background-color: #1085e4; border-radius: 10px;}
+.page-softwere-list::-webkit-scrollbar-corner { background-color: #f3f6ff;}
+.page-softwere-list::-webkit-resizer { background-color: #f3f6ff;}
+
+.page-softwere-list dt {
+    font-weight: 700;
+    color: #5a6789;
+    margin-bottom: 10px;
+}
+
+.page-softwere-list dd {
+    margin-left: 0;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
 .list-stat {
     display: flex;
     list-style-type: none;
@@ -567,6 +635,12 @@ h1 {
 .page-stat,
 .page-screen {
     background-color: #edf6ff;
+}
+
+.page-softwere {
+    padding: 109px 0 164px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .page-stat {
