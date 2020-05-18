@@ -435,7 +435,7 @@ h1 {
     background-size: 100px 87px;
 }
 
-.page-softwere-icon {
+.settings-icon {
     display: block;
     background-image: url(../img/setting.png);
     background-repeat: no-repeat;
@@ -465,7 +465,7 @@ h1 {
     flex-basis: 55%;
 }
 
-.page-softwere .title-h2 {
+.page-softwere .title-h2, .page-analytics .title-h2 {
     max-width: 557px;
     margin-top: 12px;
     margin-bottom: 26px;
@@ -497,6 +497,98 @@ h1 {
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 1.8;
+}
+
+.content-app .title-h2 {
+    margin-bottom: 36px;
+}
+
+.page-app-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c4d2dd;
+    letter-spacing: 3.5px;
+    margin-bottom: 20px;
+    margin-top: 27px;
+}
+
+.page-app-list {
+    padding: 0;
+    list-style-type: none;
+    margin-left: -11px;
+    margin-top: -12px;
+}
+
+.page-app-list>li>a {
+    background-image: url(../img/store_android_iso.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 185px;
+    height: 77px;
+}
+
+.page-app-list>li {
+    display: inline-block;
+}
+
+.page-app-list>li>a.page-app-android {
+    background-position: -12px 0;
+}
+
+.page-app-list>li>a.page-app-ios {
+    background-position: -201px 0;
+}
+
+.content-app {
+    width: 55%;
+}
+
+.content-app p {
+    margin-left: 3px;
+}
+
+.video-app {
+    position: absolute;
+    top: -61px;
+    right: -172px;
+}
+
+.flex-analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-analytics>div {
+    flex-basis: 53%;
+}
+
+.page-analytics-text {
+    margin-bottom: 54px;
+}
+
+.flex-analytics2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-analytics2>div {
+    flex-basis: 55%;;
+}
+
+.flex-analytics2 .title-h2 {
+    margin-top: 9px;
+    margin-bottom: 26px;
+}
+
+.page-analytics2 .btn-primary {
+    padding: 20px 65px;
+}
+
+.page-analytics2 img {
+    margin: 20px 8px 0 0;
 }
 
 .list-stat {
@@ -617,7 +709,7 @@ h1 {
 
 .page-grid {
     margin-top: 120px;
-    margin-bottom: 120px;
+    margin-bottom: 145px;
 }
 
 .page-subscribe {
@@ -638,13 +730,37 @@ h1 {
 }
 
 .page-softwere {
-    padding: 109px 0 164px 0;
+    padding: 113px 0 164px 0;
     position: relative;
     overflow: hidden;
 }
 
 .page-stat {
     padding: 116px 0 96px 0;
+}
+
+.page-app {
+    padding: 69px 0 97px 0;
+    position: relative;
+}
+
+.page-analytics {
+    background-image: url(../img/bg_analytic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px 0 137px 0;
+}
+
+.page-analytics2 {
+    padding: 120px 0 135px 0;
+    background-image: url(../img/page_analytics2_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-app .wrap {
+    position: relative;
 }
 
 .page-plan,
