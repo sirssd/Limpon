@@ -620,6 +620,53 @@ h1 {
     margin-bottom: -7px;
 }
 
+.box-clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.box-clients-item {
+    background-color: #ffffff;
+    padding: 21px 42px;
+    border-radius: 10px;
+    flex-basis: 31.5%;
+    box-sizing: border-box;
+    font-size: 14px;
+    box-shadow: 0 9px 20px #f4f4f4;
+}
+
+.box-clients-item .name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+    margin-bottom: 0;
+    letter-spacing: -0.6px;
+    line-height: 1.1;
+}
+.box-clients-item .position {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #1085e4;
+    margin-top: 0;
+}
+
+.box-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box-info div {
+    padding-left: 17px;
+}
+
+.box-clients-item p {
+    margin-bottom: 4px;
+}
+
 .page-plan .title-40 {
     margin: 0 0 80px 0;
 }
@@ -695,6 +742,7 @@ h1 {
     background-image: url(../img/background_top.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 53px 0 330px 0;
     position: relative;
 }
@@ -703,6 +751,7 @@ h1 {
     background-color: #108be4;
     background-image: url(../img/page-company.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding: 106px 0 99px 0;
 }
@@ -747,6 +796,7 @@ h1 {
 .page-analytics {
     background-image: url(../img/bg_analytic.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding: 117px 0 137px 0;
 }
@@ -755,8 +805,35 @@ h1 {
     padding: 120px 0 135px 0;
     background-image: url(../img/page_analytics2_bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+}
+
+.page-clients {
+    position: relative;
+    margin-top: 120px;
+    padding: 43px 0 0 0;
+}
+
+.page-clients::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(../img/happy_clients_bg.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.page-clients .title-40 {
+    color: #ffffff;
+}
+
+.page-clients .title-40 span {
+    color: #85c8ff;
 }
 
 .page-app .wrap {
@@ -771,3 +848,4 @@ h1 {
 .page-screen {
     padding: 80px 0 0 0;
 }
+
