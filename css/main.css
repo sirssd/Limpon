@@ -736,6 +736,60 @@ h1 {
     right: 0;
 }
 
+.box-team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+.box-team-item {
+    background-color: #ffffff;
+    flex-basis: 31.5%;
+    box-shadow: 0 5px 6px #f4f4f4;
+    position: relative;
+    padding: 193px 0 42px 0;
+    letter-spacing: -0.5px;
+}
+
+.box-team-item .position {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1085e4;
+    margin-bottom: 0;
+}
+
+.box-team-item .name {
+    font-size: 26px;
+    color: #192b59;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.avatar {
+    position: absolute;
+    top: -86px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.btn-more {
+    display: block;
+    background-image: url(../img/btn-more.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin: 0 auto;
+}
+
+.box-team-item .btn-more:focus {
+    outline: none;
+}
+
 /* PAGE -- (s) */
 
 .page-header {
@@ -812,7 +866,20 @@ h1 {
 .page-clients {
     position: relative;
     margin-top: 120px;
-    padding: 43px 0 0 0;
+    padding: 43px 0 123px 0;
+}
+
+.page-plan {
+    padding: 0px 0 125px 0;
+}
+
+.page-team {
+    text-align: center;
+    background-image: url(../img/page_team_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 83px 0 0 0;
 }
 
 .page-clients::before {
@@ -828,11 +895,11 @@ h1 {
     z-index: -1;
 }
 
-.page-clients .title-40 {
+.page-clients .title-40, .page-team .title-40 {
     color: #ffffff;
 }
 
-.page-clients .title-40 span {
+.page-clients .title-40 span, .page-team .title-40 span {
     color: #85c8ff;
 }
 
@@ -848,4 +915,3 @@ h1 {
 .page-screen {
     padding: 80px 0 0 0;
 }
-
