@@ -891,6 +891,19 @@ h1 {
     top: -163px;
 }
 
+.intro {
+    color: rgba(0,0,0,0.04);
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+}
+
 
 
 /******************************************************* PAGE -- (s) *************************************************************/
