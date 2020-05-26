@@ -1010,6 +1010,65 @@ h1 {
     margin-right: 60px;
 }
 
+.footer>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.footer .social li {
+    padding-left: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.text-start p a {
+    color: #1085e4;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-icons {
+    display: block;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 17px;
+}
+
+.fb-icon {
+    background-image: url(../img/footer_social_icons.png);
+    background-position: 5px 0;
+}
+
+.tw-icon {
+    background-image: url(../img/footer_social_icons.png);
+    background-position: -32px 0;
+}
+
+.be-icon {
+    background-image: url(../img/footer_social_icons.png);
+    background-position: -74px 0;
+}
+
+.pin-icon {
+    background-image: url(../img/footer_social_icons.png);
+    background-position: -116px 0;
+}
+
+.ff-icon {
+    background-image: url(../img/footer_social_icons.png);
+    background-position: -154px 0;
+}
+
+
 /******************************************************* PAGE -- (s) *************************************************************/
 
 .page-header {
@@ -1143,4 +1202,9 @@ h1 {
     background-size: cover;
     background-position: center;
     padding: 69px 0 121px 0;
+}
+
+.footer {
+    background-color: #192b59;
+    padding: 10px 0 10px 0;
 }
